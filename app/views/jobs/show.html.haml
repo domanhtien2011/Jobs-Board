@@ -1,6 +1,7 @@
 %h1= @job.title
 %p= @job.description
 %p= @job.company
+%p= link_to "Click here for more details...", @job.url, :target => "_blank"
 
 = link_to("Home", root_url)
 = link_to("Edit", edit_job_url(@job))
